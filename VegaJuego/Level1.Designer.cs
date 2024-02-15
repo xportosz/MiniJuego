@@ -28,10 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Level1));
+            SuspendLayout();
+            // 
+            // Level1
+            // 
+            AutoScaleMode = AutoScaleMode.None;
+            BackgroundImage = Properties.Resources.FondoFinal;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(806, 467);
+            DoubleBuffered = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            Name = "Level1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "VegaZelda";
+            ResumeLayout(false);
         }
 
         #endregion
