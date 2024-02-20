@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using System.Windows.Forms.VisualStyles;
 
 namespace VegaJuego
 {
@@ -47,7 +47,21 @@ namespace VegaJuego
             if(e.KeyChar== 's' && (Caja.Location.Y < Lienzo.Size.Height -160))
             {
                 this.Direccion = "ABAJO";
+                this.Caja.BackgroundImage = global::VegaJuego.Properties.Resources.Abajo;
+                this.Caja.Location = new Point(this.Caja.Location.X, this.Caja.Location.Y + 10);
 
+            }
+            if(e.KeyChar== 'd' && (Caja.Location.X<Lienzo.Size.Width - 120))
+            {
+                this.Direccion = "DERECHA";
+                this.Caja.BackgroundImage = global::VegaJuego.Properties.Resources.derecha;
+                this.Caja.Location = new Point(this.Caja.Location.X +10, this.Caja.Location.Y);
+            }
+            if (e.KeyChar== 'a' && (Caja.Location.X > 0))
+            {
+                this.Direccion = "IZQUIERDA";
+                this.Caja.BackgroundImage = global::VegaJuego.Properties.Resources.izquierda;
+                this.Caja.Location = new Point(this.Caja.Location.X - 10, this.Caja.Location.Y);
             }
         }
     }
