@@ -43,6 +43,7 @@
             Name = "Level1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "VegaZelda";
+            KeyPress += Level1_KeyPress_1;
             ResumeLayout(false);
         }
 

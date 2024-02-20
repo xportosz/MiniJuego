@@ -13,7 +13,9 @@ namespace VegaJuego
             Player = new Link(this, 0, 0, 30, 0, 0);
         }
 
-        private void Level1_KeyPress(object sender, KeyPressEventArgs e)
+    
+
+        private void Level1_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             Player.mover(e);
         }
