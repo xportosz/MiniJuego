@@ -3,6 +3,7 @@ namespace VegaJuego
     public partial class Level1 : Form
     {
         Link Player;
+        Broncas Enemigo1;
         public Level1()
         {
             InitializeComponent();
@@ -11,6 +12,7 @@ namespace VegaJuego
         private void IniciarPersonajes()
         {
             Player = new Link(this, 0, 0, 30, 0, 0);
+            Enemigo1 = new Broncas(this, 0, 300);
         }
 
     
