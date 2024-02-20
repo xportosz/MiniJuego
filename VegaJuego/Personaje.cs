@@ -48,7 +48,7 @@ namespace VegaJuego
         {
         }
 
-        public Personaje(Level1 vegaZelda, int x. int y)
+        public Personaje(Level1 vegaZelda, int x, int y)
         {
             coordX = x;
             coordY = y;
