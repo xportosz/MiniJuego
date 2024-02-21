@@ -8,6 +8,7 @@ namespace VegaJuego
         {
             InitializeComponent();
             IniciarPersonajes();
+            IniciarOpcionesDelMapa();
         }
         private void IniciarPersonajes()
         {
@@ -26,10 +27,20 @@ namespace VegaJuego
         {
             Enemigo1.mover();
         }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void IniciarOpcionesDelMapa()
+        {
+            labelVida.Text = "Salud->" + Player.Salud;
+            labelEscudo.Text = "Escudo->" + Player.Escudo;
+            labelArma.Text = "Arma->" + Player.Arma;
         }
     }
 }
